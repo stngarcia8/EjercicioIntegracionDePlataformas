@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Ventabook>
+  <Venta>
+    <IdVenta>47aa5e22-c5c3-41b5-b6a6-f1cc4da99aad</IdVenta>
+    <FechaVenta>2019-05-20T20:59:15.0026966-04:00</FechaVenta>
+    <RutUsuario>12456789-3</RutUsuario>
+    <NombreUsuario>Usuario47aa5e22-c5c3-41b5-b6a6-f1cc4da99aad</NombreUsuario>
+    <RutCliente>12345678-9</RutCliente>
+    <NombreCliente>Nacho47aa5e22-c5c3-41b5-b6a6-f1cc4da99aad</NombreCliente>
+    <TipoDocumento>Boleta</TipoDocumento>
+    <NombreSucursal>Parinacota Norte</NombreSucursal>
+    <FormaPago>Efectivo</FormaPago>
+    <IdFormaPago>1</IdFormaPago>
+    <IdTipoDocumento>1</IdTipoDocumento>
+  </Venta>
+  <DatosFacturacion>
+    <RazonSocial>Reventa de Libros</RazonSocial>
+    <Rut>97981236-9</Rut>
+    <Direccion>Avenida La Ballenita 401</Direccion>
+    <Giro>Basurita y Cia</Giro>
+    <Contacto>www.librosbasurita.cl</Contacto>
+    <Ciudad>Talca City</Ciudad>
+    <CantidadDetalle>2</CantidadDetalle>
+  </DatosFacturacion>
+  <DetalleVenta1>
+    <IdEjemplar>c9456325-add0-4c1f-b62b-bf9387172bc8</IdEjemplar>
+    <NombreEjemplar>El Librete</NombreEjemplar>
+    <PrecioUnitario>9000</PrecioUnitario>
+    <Cantidad>5</Cantidad>
+    <PrecioTotal>45000</PrecioTotal>
+  </DetalleVenta1>
+  <DetalleVenta2>
+    <IdEjemplar>8425e4de-fed6-486f-b845-9483c852fb1e</IdEjemplar>
+    <NombreEjemplar>El Librote</NombreEjemplar>
+    <PrecioUnitario>6000</PrecioUnitario>
+    <Cantidad>2</Cantidad>
+    <PrecioTotal>12000</PrecioTotal>
+  </DetalleVenta2>
+</Ventabook>

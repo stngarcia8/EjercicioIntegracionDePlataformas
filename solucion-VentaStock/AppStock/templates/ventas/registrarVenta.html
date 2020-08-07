@@ -1,0 +1,76 @@
+{% extends 'template.html' %}
+{% load crispy_forms_tags %}
+
+{% block titleHead %}
+VentaStock - Registro de ventas.
+{% endblock %}
+
+{% block contenido %}
+<h1>Registro de ventas.</h1>
+<hr>
+<p class="lead">
+  Ingrese los datos de la venta.
+</p>
+<div class="panel panel-default">
+  <div class="panel-body">
+  <form method="post">
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-lg-4">
+        <label>Nombre cliente</label>
+        {{ form.nombreCliente }}
+      </div>
+      <div class="col-lg-4">
+        <label>Rut cliente</label>
+        {{ form.rutCliente }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <label>Tipo de documento</label>
+        {{ form.tipoDocumento }}
+      </div>
+      <div class="col-lg-4">
+        <label>Forma de pago</label>
+        {{ form.formaPago }}
+      </div>
+    </div>
+  <br><br>
+
+
+
+    {{ detalle_venta_form_set.management_form }}
+    <div class="row">
+      <div class="col-lg-4">
+        <label>Libro</label>
+      </div>
+      <div class="col-lg-4">
+        <label>Cantidad</label>
+      </div>
+      <div class="col-lg-4">
+        <label>Precio</label>
+      </div>
+    </div>
+    {% for detalle_venta_form in detalle_venta_form_set %}
+      <div class="row">
+        <div class="col-lg-4">
+          {{ detalle_venta_form.libro }}
+        </div>
+        <div class="col-lg-4">
+          {{ detalle_venta_form.cantidad }}
+        </div>
+        <div class="col-lg-4">
+          {{ detalle_venta_form.precio }}
+        </div>
+      </div>
+      <br>
+    {% endfor %}
+    <br>
+    <button class="btn btn-lg btn-primary" type="submit">Grabar</button>
+    <a class="btn btn-light" href="{% url 'listaDeVentas' %}" role="button">Cancelar</a>
+    </form>
+  </div>
+</div>
+<br><br>
+{% endblock %}

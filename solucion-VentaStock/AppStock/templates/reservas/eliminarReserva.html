@@ -1,0 +1,18 @@
+{% extends 'template.html' %}
+
+{% block titleHead %}
+<title>VentaStock - Eliminar reserva.</title>
+{% endblock %}
+
+{% block contenido %}
+<h1>Eliminar reserva.</h1>
+<hr>
+<p class="lead">
+  ¿Está seguro de eliminar la reserva?
+</p>
+<form action="" method="post">
+  {% csrf_token %}
+  <button class="btn btn-lg btn-light " type="submit"> Eliminar reserva </button>
+  <a class="btn btn-primary" href="{% url 'listaDeReservas' %}" role="button">Cancelar</a>
+</form>
+{% endblock %}

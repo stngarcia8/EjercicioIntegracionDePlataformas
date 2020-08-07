@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Eliminar categoría.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Eliminar categoría.</h1>
+  <p class="lead">
+      ¿Está seguro de eliminar la categoría?
+  </p>
+    <form action="" method="post">
+      {% csrf_token %}
+      <button class="btn btn-lg btn-light " type="submit"> Confirmar eliminación </button>
+      <a class="btn btn-primary" href="{% url 'listaDeCategorias' %}" role="button"> Cancelar </a></p>
+    </form>
+
+ {% endblock %}

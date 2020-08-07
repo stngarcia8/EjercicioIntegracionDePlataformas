@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Ver libro.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Información de libro.</h1>
+
+  <table class="table table-responsive table-bordered table-hover table-striped">
+      <tbody>
+              <tr>
+                <td>Id</td>
+                <td>{{ libro.id }}</td>
+              </tr>
+              <tr>
+                <td>Título</td>
+                <td>{{ libro.titulo }}</td>
+              </tr>
+              <tr>
+                <td>ISBN</td>
+                <td>{{ libro.isbn }}</td>
+              </tr>
+              <tr>
+                <td>Autor</td>
+                <td>{{ libro.autor.nombre_completo }}</td>
+              </tr>
+              <tr>
+                <td>Categoría</td>
+                <td>
+                  {% for categoria in libro.categoria.all %}
+                  {{ categoria }}
+                  {% if not forloop.last %},{% endif %}
+                  {% endfor %}
+                </td>
+              </tr>
+              <tr>
+                <td>Editorial</td>
+                <td>{{ libro.editorial.nombre }}</td>
+              </tr>
+              <tr>
+                <td>Idioma</td>
+                <td>{{ libro.idioma.nombre }}</td>
+              </tr>
+              <tr>
+                <td>Cantidad de ejemplares</td>
+                <td>{{ libro.cantidad_ejemplares }}</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                    <a class="btn btn-light" href="{{ libro.get_update_url }}" role="button"> Editar </a>
+                    {% if libro.cantidad_ejemplares is 0 %}
+                      <a class="btn btn-light" href="{{ libro.get_delete_url }}" role="button"> Eliminar </a>
+                    {% endif %}
+                    <a class="btn btn-light" href="{{ libro.get_add_instance_url }}" role="button"> Agregar ejemplares </a>
+                    {% if libro.cantidad_ejemplares is not 0  %}
+                    <a class="btn btn-light" href="{{ libro.get_list_instance_url }}" role="button"> Listar ejemplares </a>
+                    {% endif %}
+                </td>
+              </tr>
+      </tbody>
+    </table>
+    <a class="btn btn-primary" href="{% url 'listaDeLibros' %}" role="button"> Volver </a></p>
+
+ {% endblock %}

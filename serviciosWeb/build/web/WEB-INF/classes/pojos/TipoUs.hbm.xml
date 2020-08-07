@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-06-2019 3:33:07 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.TipoUs" table="TIPO_US" schema="VENTABOOK_USR" optimistic-lock="version">
+        <id name="idTipo" type="big_decimal">
+            <column name="ID_TIPO" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreTipo" type="string">
+            <column name="NOMBRE_TIPO" length="20" not-null="true" />
+        </property>
+        <set name="usuarios" table="USUARIO" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_TIPO" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="pojos.Usuario" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+Para la ejecución de los script es necesario tener instalado ORACLE18c, la version 11g no es soportada, debido a que no soporta campo con valores autonumericos, el manejo del orm de django solicita esta version para funcionar.
+
+instalacion de script en el servidor:
+- abrir una consola de símbolo de sistema como administrador y ejecutar lo siguiente:
+sqlpluss localhost:1521@xe as sysdba (luego presionar enter, en la consulta de contraseña solo presionar enter)
+
+- dejar los script en una carpeta accesible, para el ejemplo lo dejaremos en d:/script
+- para la base de datos de bodega:
+@d:/script/gesbod.sql;    (Al presionar enter el script comienza con el proceso y este avisara cuando este listo)
+
+
+- para la base de datos de facturas:
+@d:/script/facturas.sql; (idem al anterior)
+
+
+- para la base de datos de ventabook (sucursales)
+@d:/script/ventabook.sql; (idem al anterior)
+
+cuando estos escripts sean cargados las aplicaciones estan listas para funcionar.  Recordar que los servicios web y el ventastock no poseen bases de datos propias debido a que estos deben consumir la información de las bases de datos instaladas.
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-06-2019 3:33:07 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.DetVenta" table="DET_VENTA" schema="VENTABOOK_USR" optimistic-lock="version">
+        <composite-id name="id" class="pojos.DetVentaId">
+            <key-property name="idVenta" type="string">
+                <column name="ID_VENTA" length="36" />
+            </key-property>
+            <key-property name="idLibro" type="big_decimal">
+                <column name="ID_LIBRO" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="libro" class="pojos.Libro" update="false" insert="false" fetch="select">
+            <column name="ID_LIBRO" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="venta" class="pojos.Venta" update="false" insert="false" fetch="select">
+            <column name="ID_VENTA" length="36" not-null="true" />
+        </many-to-one>
+        <property name="cantidad" type="short">
+            <column name="CANTIDAD" precision="4" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Ventabook>
+  <Venta>
+    <IdVenta>a7b8998b-db16-43d8-93b1-d501da0de840</IdVenta>
+    <FechaVenta>2019/06/15 23:26:34</FechaVenta>
+    <RutUsuario>12345678-9</RutUsuario>
+    <NombreUsuario>Ignacio Salazar Garcia</NombreUsuario>
+    <RutCliente>78945612-3</RutCliente>
+    <NombreCliente>Gato Juanito</NombreCliente>
+    <TipoDocumento>Factura</TipoDocumento>
+    <NombreSucursal>Sucursal 1</NombreSucursal>
+    <FormaPago>Efectivo</FormaPago>
+    <IdFormaPago>1</IdFormaPago>
+    <IdTipoDocumento>2</IdTipoDocumento>
+  </Venta>
+  <DatosFacturacion>
+    <RazonSocial>Gato Juanito SA</RazonSocial>
+    <Rut>98765432-1</Rut>
+    <Direccion>El Gato Juanin 222</Direccion>
+    <Giro>Venta de gatos disecados</Giro>
+    <Contacto>gatojuanito@gato.miau</Contacto>
+    <Ciudad>GatoLand</Ciudad>
+    <CantidadDetalle>4</CantidadDetalle>
+  </DatosFacturacion>
+  <DetalleVenta1>
+    <IdEjemplar>2</IdEjemplar>
+    <NombreEjemplar>Antes de que los cuelguen</NombreEjemplar>
+    <PrecioUnitario>14000</PrecioUnitario>
+    <Cantidad>1</Cantidad>
+    <PrecioTotal>14000</PrecioTotal>
+  </DetalleVenta1>
+  <DetalleVenta2>
+    <IdEjemplar>3</IdEjemplar>
+    <NombreEjemplar>El ultimo argumento de los reyes</NombreEjemplar>
+    <PrecioUnitario>13000</PrecioUnitario>
+    <Cantidad>1</Cantidad>
+    <PrecioTotal>13000</PrecioTotal>
+  </DetalleVenta2>
+  <DetalleVenta3>
+    <IdEjemplar>4</IdEjemplar>
+    <NombreEjemplar>Horus, Senor de la Guerra</NombreEjemplar>
+    <PrecioUnitario>15000</PrecioUnitario>
+    <Cantidad>1</Cantidad>
+    <PrecioTotal>15000</PrecioTotal>
+  </DetalleVenta3>
+  <DetalleVenta4>
+    <IdEjemplar>1</IdEjemplar>
+    <NombreEjemplar>La voz de las espadas</NombreEjemplar>
+    <PrecioUnitario>15000</PrecioUnitario>
+    <Cantidad>1</Cantidad>
+    <PrecioTotal>15000</PrecioTotal>
+  </DetalleVenta4>
+</Ventabook>

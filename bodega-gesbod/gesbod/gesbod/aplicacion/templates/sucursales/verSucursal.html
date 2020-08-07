@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Ver sucursal.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Información de sucursal.</h1>
+
+  <table class="table table-responsive table-bordered table-hover table-striped">
+      <tbody>
+              <tr>
+                <td>Id</td>
+                <td>{{ sucursal.id }}</td>
+              </tr>
+              <tr>
+                <td>Nombre</td>
+                <td>{{ sucursal.nombre }}</td>
+              </tr>
+              <tr>
+                <td>Encargado</td>
+                <td>{{ sucursal.encargado }} {{ user.last_name }}</td>
+              </tr>
+              <tr>
+                  <td>Dirección</td>
+                  <td>{{ sucursal.direccion }} {{ user.last_name }}</td>
+                </tr>
+             <tr>
+                <td>Estado</td>
+                {% if sucursal.habilitado %}
+                  <td>Activa</td>
+                {% else %}
+                  <td>Inhabilitada</td>
+                {% endif %}
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                    <a class="btn btn-light" href="{{ sucursal.get_update_url }}" role="button"> Editar </a>
+                    <a class="btn btn-light" href="{{ sucursal.get_delete_url }}" role="button"> Eliminar </a>
+                </td>
+              </tr>
+      </tbody>
+    </table>
+    <a class="btn btn-primary" href="{% url 'listaDeSucursales' %}" role="button"> Volver </a></p>
+
+ {% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Sistema de gestión de bodega.</title>
+{% endblock %}
+
+{% block contenido %}
+
+<h1>Opciones generales.</h1>
+<div class="row">
+  <div class="col-md-4">
+    <h2>Libros</h2>
+    <ul>
+      <li>Agregar libros.</li>
+      <li> Editar información de libros.</li>
+      <li>Asignar libros a las sucursales</li>
+      <li>Inhabilitar libros.</li>
+    </ul>
+    <p><a class="btn btn-block btn-secondary" href="{% url 'listaDeLibros' %}" role="button"> Ir &raquo;</a></p>
+  </div>
+  <div class="col-md-4">
+    <h2>Editoriales</h2>
+    <ul>
+      <li>Agregar editoriales.</li>
+      <li> Editar información de editoriales.</li>
+      <li>Inhabilitar editoriales.</li>
+    </ul>
+    <p><a class="btn btn-block btn-secondary" href="{% url 'listaDeEditoriales' %}" role="button"> Ir &raquo;</a></p>
+  </div>
+  <div class="col-md-4">
+    <h2>Autores</h2>
+    <ul>
+      <li>Agregar autores.</li>
+      <li> Editar información de autores.</li>
+      <li>Inhabilitar autores.</li>
+    </ul>
+    <p><a class="btn btn-block btn-secondary" href="{% url 'listaDeAutores' %}" role="button"> Ir &raquo;</a></p>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-4">
+    <h2>Categorías</h2>
+    <ul>
+      <li>Agregar categorías.</li>
+      <li> Editar categorías.</li>
+      <li>Inhabilitar categorías.</li>
+    </ul>
+    <p><a class="btn btn-block btn-secondary" href="{% url 'listaDeCategorias' %}" role="button"> Ir &raquo;</a></p>
+  </div>
+  <div class="col-md-4">
+    <h2>Stock</h2>
+    <ul>
+      <li>Visualizar stock de bodega.</li>
+      <li> Visualizar stock por libros.</li>
+      <li>Visualizar stock por editoriales.</li>
+    </ul>
+    <p><a class="btn btn-secondary" href="#" role="button"> Ir &raquo;</a></p>
+  </div>
+</div>
+{% if request.user.is_superuser %}
+<hr>
+<h1>Opciones de administrador.</h1>
+<div class="row">
+  <div class="col-md-4">
+    <h2>Sucursales</h2>
+    <ul>
+      <li>Agregar sucursales.</li>
+      <li> Editar información de sucursales.</li>
+      <li>Inhabilitar sucursales.</li>
+    </ul>
+    <p><a class="btn btn-block btn-secondary" href="{% url 'listaDeSucursales' %}" role="button"> Ir &raquo;</a></p>
+  </div>
+  <div class="col-md-4">
+    <h2>Usuarios</h2>
+    <ul>
+      <li>Agregar usuarios.</li>
+      <li> Editar información de usuarios.</li>
+      <li>Inhabilitar usuarios.</li>
+    </ul>
+    <p><a class="btn btn-block btn-secondary" href="{% url 'listaDeUsuarios' %}" role="button"> Ir &raquo;</a></p>
+  </div>
+</div>
+{% endif %}
+
+{% endblock %}

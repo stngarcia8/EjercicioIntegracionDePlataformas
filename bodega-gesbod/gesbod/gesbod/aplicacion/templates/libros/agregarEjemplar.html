@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Edición de libro.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Edición de libro.</h1>
+  <p class="lead">
+      Ingrese los datos requeridos para ingresar ejemplares del libro.<br>
+      libro: {{ libro.titulo }}<br>
+      Autor: {{ libro.autor.nombre_completo }}<br>
+      Ejemplares: {{ libro.cantidad_ejemplares }}
+  </p>
+  <form method="post">
+    {% csrf_token %}
+
+    {% if form.non.field.errors %}
+      {{ form.non.field.errors }}
+    {% endif %}
+    
+    {% for field in form.visible_fields %}
+      <div <div class="form-group">
+          {{ field.label_tag }}
+          {{ field }}
+        </div>
+    {% endfor %}
+    <button class="btn btn-lg btn-primary " type="submit"> Agregar ejemplares </button>
+    <a class="btn btn-light" href="{{ libro.get_absolute_url " role="button"> Cancelar </a></p>
+  </form>
+
+ {% endblock %}

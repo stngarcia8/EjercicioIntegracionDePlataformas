@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Eliminar libro.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Eliminar libro.</h1>
+  <p class="lead">
+      ¿Está seguro de eliminar el libro {{ libro.titulo }}?
+  </p>
+    <form action="" method="post">
+      {% csrf_token %}
+      <button class="btn btn-lg btn-light " type="submit"> Confirmar eliminación </button>
+      <a class="btn btn-primary" href="{{ libro.get_absolute_url }}" role="button"> Cancelar </a></p>
+    </form>
+
+ {% endblock %}

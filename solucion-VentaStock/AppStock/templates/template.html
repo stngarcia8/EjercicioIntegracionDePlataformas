@@ -1,0 +1,85 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="es">
+
+<head>
+	<title>
+		{% block titleHead %}
+		VentaStock
+		{% endblock %}
+	</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="{% static 'fontawesome-5.9.0/css/all.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/sticky-footer-navbar.css' %}">
+	<link rel="stylesheet" href="{% static 'css/venta-stock-custom.css' %}">
+
+	{% block jsHead %}
+	{% endblock %}
+</head>
+
+<body class="text-light bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-light container py-2 px-4" style="background-color: #fcae11;">
+		<a class="navbar-brand text-dark" href="{% url 'index' %}">
+			<h2>
+				<i class="fas fa-dolly-flatbed" style="font-size:50px;"></i>
+				VentaStock
+			</h2>
+		</a>
+		{% if request.user.is_authenticated %}
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+			aria-expanded="false" aria-label="Mostrar menú">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse navbar-light" id="navbar">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link text-dark mx-2 font-weight-bold" href="{% url 'index' %}">
+					Inicio
+				</a>
+				<a class="nav-item nav-link text-dark mx-2 font-weight-bold" href="{% url 'listaDeVentas' %}">
+					Ventas
+				</a>
+				<a class="nav-item nav-link text-dark mx-2 font-weight-bold" href="{% url 'listaDeReservas' %}">
+					Reservas
+				</a>
+				<a class="nav-item nav-link text-dark mx-2 font-weight-bold" href="{% url 'listaDeLibros' %}">
+					Libros disponibles
+				</a>
+			</div>
+		</div>
+		<form class="form-inline my-2 my-lg-0">
+			<a class="btn btn-primary btn-danger my-2 my-sm-0" href="{% url 'logout' %}" role="button">
+				Cerrar Sesión
+			</a>
+		</form>
+		{% endif %}
+	</nav>
+
+	<div class="container col-10 col-lg-8 p-4 mb-4">
+		<h2 class="mt-2">
+			{% block titleBody %}
+			{% endblock %}
+		</h2>
+		<hr>
+		<div class="justify-content-center">
+			{% block contenido %}
+			{% endblock %}
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container text-dark py-2 px-4" style="background-color: #fcae11;">
+			<h3 class="mt-2">Integración de Plataformas, 2019.</h3>
+			<p>Desarrollado por: Pedro Briceño, Elías García, Daniel García e Ignacio Salazar.</p>
+		</div>
+	</footer>
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

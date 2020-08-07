@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="UsuarioCreateDlg" widgetVar="UsuarioCreateDialog" modal="true" resizable="false" appendTo="@(body)" header="Crear nuevo usuario.">
+            <h:form id="UsuarioCreateForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{usuarioController.selected != null}">
+                        <p:outputLabel value="Nombre usuario" for="nombreUsuario" />
+                        <p:inputText id="nombreUsuario" value="#{usuarioController.selected.nombreUsuario}" title="#{bundle.CreateUsuarioTitle_nombreUsuario}" required="true" requiredMessage="#{bundle.CreateUsuarioRequiredMessage_nombreUsuario}"/>
+                        <p:outputLabel value="Rut usuario" for="rutUsuario" />
+                        <p:inputText id="rutUsuario" value="#{usuarioController.selected.rutUsuario}" title="#{bundle.CreateUsuarioTitle_rutUsuario}" required="true" requiredMessage="#{bundle.CreateUsuarioRequiredMessage_rutUsuario}"/>
+                        <p:outputLabel value="Contraseña" for="contrasenaUsuario" />
+                        <p:inputText id="contrasenaUsuario" value="#{usuarioController.selected.contrasenaUsuario}" title="#{bundle.CreateUsuarioTitle_contrasenaUsuario}" required="true" requiredMessage="#{bundle.CreateUsuarioRequiredMessage_contrasenaUsuario}"/>
+                        <p:outputLabel value="Sucursal" for="idSucursal" />
+                        <p:selectOneMenu id="idSucursal" value="#{usuarioController.selected.idSucursal}" required="true" requiredMessage="#{bundle.EditUsuarioRequiredMessage_idSucursal}">
+                            <f:selectItem itemLabel="Seleccione una sucursal" itemValue="" />
+                            <f:selectItems value="#{sucursalController.itemsAvailableSelectOne}"
+                                           var="idSucursalItem"
+                                           itemValue="#{idSucursalItem}"/>
+                        </p:selectOneMenu>
+                        <p:outputLabel value="#Tipo usuario" for="idTipo" />
+                        <p:selectOneMenu id="idTipo" value="#{usuarioController.selected.idTipo}" required="true" requiredMessage="#{bundle.EditUsuarioRequiredMessage_idTipo}">
+                            <f:selectItem itemLabel="Seleccione un tipo" itemValue="" />
+                            <f:selectItems value="#{tipoUsController.itemsAvailableSelectOne}"
+                                           var="idTipoItem"
+                                           itemValue="#{idTipoItem}"/>
+                        </p:selectOneMenu>
+                    </p:panelGrid>
+                    <p:commandButton actionListener="#{usuarioController.create}" value="Grabar usuario" update="display,:UsuarioListForm:datalist,:growl" oncomplete="handleSubmit(args,'UsuarioCreateDialog');"/>
+                    <p:commandButton value="Cancelar" onclick="UsuarioCreateDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

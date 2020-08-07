@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Ventabook>
+  <Venta>
+    <IdVenta>96d26ada-c319-4d7e-9e3c-7eeb1fd30841</IdVenta>
+    <FechaVenta>2019/06/16 04:18:01</FechaVenta>
+    <RutUsuario>12345678-9</RutUsuario>
+    <NombreUsuario>Elias Garcia Carvajal</NombreUsuario>
+    <RutCliente>45678932-1</RutCliente>
+    <NombreCliente>tercer weon</NombreCliente>
+    <TipoDocumento>Boleta</TipoDocumento>
+    <NombreSucursal>Sucursal 1</NombreSucursal>
+    <FormaPago>Efectivo</FormaPago>
+    <IdFormaPago>1</IdFormaPago>
+    <IdTipoDocumento>1</IdTipoDocumento>
+  </Venta>
+  <DatosFacturacion>
+    <RazonSocial></RazonSocial>
+    <Rut></Rut>
+    <Direccion></Direccion>
+    <Giro></Giro>
+    <Contacto></Contacto>
+    <Ciudad></Ciudad>
+    <CantidadDetalle>1</CantidadDetalle>
+  </DatosFacturacion>
+  <DetalleVenta1>
+    <IdEjemplar>4</IdEjemplar>
+    <NombreEjemplar>Horus, Senor de la Guerra</NombreEjemplar>
+    <PrecioUnitario>15000</PrecioUnitario>
+    <Cantidad>1</Cantidad>
+    <PrecioTotal>15000</PrecioTotal>
+  </DetalleVenta1>
+</Ventabook>

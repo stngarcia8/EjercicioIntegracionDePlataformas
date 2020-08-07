@@ -1,0 +1,51 @@
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Presentacion.exe.config
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Presentacion.exe
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Presentacion.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Facturas.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Facturas.Presentacion.Properties.Resources.resources
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Facturas.Presentacion.Ventana.resources
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Facturas.Presentacion.csproj.GenerateResource.Cache
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Facturas.Presentacion.exe
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Facturas.Presentacion.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Dominio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Lector.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Dominio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Lector.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.ActiveMQ.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.ActiveMQ.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.ActiveMQ.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Negocio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Negocio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Datos.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Datos.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Dominio.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Negocio.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Lector.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Datos.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.ActiveMQ.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Dominio.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Negocio.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Lector.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Facturas.Datos.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.xml
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.ActiveMQ.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Apache.NMS.ActiveMQ.xml
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Facturas.Presentacion.csprojResolveAssemblyReference.cache
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Facturas.Presentacion.Properties.Resources.resources
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Facturas.Presentacion.Ventana.resources
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Facturas.Presentacion.csproj.GenerateResource.Cache
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Newtonsoft.Json.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Newtonsoft.Json.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Newtonsoft.Json.xml
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Sistema de Facturación.exe.config
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Sistema de Facturación.exe
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\bin\Debug\Sistema de Facturación.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Sistema de Facturación.exe
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\PrototipoFacturas\obj\Debug\Sistema de Facturación.pdb

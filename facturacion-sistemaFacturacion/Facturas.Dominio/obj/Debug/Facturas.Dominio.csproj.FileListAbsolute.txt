@@ -1,0 +1,10 @@
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Dominio\bin\Debug\Facturas.Dominio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Dominio\bin\Debug\Facturas.Dominio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Dominio\obj\Debug\Facturas.Dominio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Dominio\obj\Debug\Facturas.Dominio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Dominio\obj\Debug\Facturas.Dominio.csprojResolveAssemblyReference.cache
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Dominio\bin\Debug\Facturas.Dominio.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Dominio\bin\Debug\Facturas.Dominio.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Dominio\obj\Debug\Facturas.Dominio.csprojResolveAssemblyReference.cache
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Dominio\obj\Debug\Facturas.Dominio.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Dominio\obj\Debug\Facturas.Dominio.pdb

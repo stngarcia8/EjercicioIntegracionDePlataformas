@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Ventabook>
+  <Venta>
+    <IdVenta>ea6190c6-5b3f-46c2-a560-bebe922f0645</IdVenta>
+    <FechaVenta>2019/06/16 04:16:11</FechaVenta>
+    <RutUsuario>13707641-1</RutUsuario>
+    <NombreUsuario>Daniel Garcia Asathor</NombreUsuario>
+    <RutCliente>12345678-9</RutCliente>
+    <NombreCliente>primer weon</NombreCliente>
+    <TipoDocumento>Boleta</TipoDocumento>
+    <NombreSucursal>Sucursal 1</NombreSucursal>
+    <FormaPago>Efectivo</FormaPago>
+    <IdFormaPago>1</IdFormaPago>
+    <IdTipoDocumento>1</IdTipoDocumento>
+  </Venta>
+  <DatosFacturacion>
+    <RazonSocial></RazonSocial>
+    <Rut></Rut>
+    <Direccion></Direccion>
+    <Giro></Giro>
+    <Contacto></Contacto>
+    <Ciudad></Ciudad>
+    <CantidadDetalle>1</CantidadDetalle>
+  </DatosFacturacion>
+  <DetalleVenta1>
+    <IdEjemplar>1</IdEjemplar>
+    <NombreEjemplar>La voz de las espadas</NombreEjemplar>
+    <PrecioUnitario>15000</PrecioUnitario>
+    <Cantidad>1</Cantidad>
+    <PrecioTotal>15000</PrecioTotal>
+  </DetalleVenta1>
+</Ventabook>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="UsuarioViewDlg" widgetVar="UsuarioViewDialog" modal="true" resizable="false" appendTo="@(body)" header="Ver información de usuario.">
+            <h:form id="UsuarioViewForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{usuarioController.selected != null}">
+                        <h:outputText value="Id"/>
+                        <h:outputText value="#{usuarioController.selected.idUsuario}" title="#{bundle.ViewUsuarioTitle_idUsuario}"/>
+                        <h:outputText value="Nombre usuario"/>
+                        <h:outputText value="#{usuarioController.selected.nombreUsuario}" title="#{bundle.ViewUsuarioTitle_nombreUsuario}"/>
+                        <h:outputText value="Rut usuario"/>
+                        <h:outputText value="#{usuarioController.selected.rutUsuario}" title="#{bundle.ViewUsuarioTitle_rutUsuario}"/>
+                        <h:outputText value="Contraseña"/>
+                        <h:outputText value="#{usuarioController.selected.contrasenaUsuario}" title="#{bundle.ViewUsuarioTitle_contrasenaUsuario}"/>
+                        <h:outputText value="Sucursal"/>
+                        <h:outputText value="#{usuarioController.selected.idSucursal.nombreSucursal}" title="#{bundle.ViewUsuarioTitle_idSucursal}"/>
+                        <h:outputText value="Tipo de usuario"/>
+                        <h:outputText value="#{usuarioController.selected.idTipo.nombreTipo}" title="#{bundle.ViewUsuarioTitle_idTipo}"/>
+                    </p:panelGrid>
+                    <p:commandButton value="Cerrar" onclick="UsuarioViewDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

@@ -1,0 +1,9 @@
+prerequisito: estar la base de datos de ventabook instalada.
+
+1. abrir el proyecto con netbeans (version 8.2.x)
+2. En la rama de el explorador de proyectos seleccionar el proyecto (ventabook) presionar el boton derecho y realizar las siguientes actividades:
+- Ejecutar la opcion clean and build (limpiar y generar)
+- Ejecutar la opcion deploy
+
+
+3. Ir a la opcion servicios (o presionar control+5), ubicar la opcion servidor, luego expandir la rama para colocarse en la opcion glassfish 4.1.1, abrir la rama aplication y buscar la aplicacion ventabook, posicionarse sobre ventabook presionar boton derecho y ejecutar la opcion ejecutar en el navegador.

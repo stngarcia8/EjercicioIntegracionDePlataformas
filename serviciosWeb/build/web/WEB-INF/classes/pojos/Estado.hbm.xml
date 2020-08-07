@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-06-2019 3:33:07 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Estado" table="ESTADO" schema="VENTABOOK_USR" optimistic-lock="version">
+        <id name="idEstado" type="big_decimal">
+            <column name="ID_ESTADO" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreEstado" type="string">
+            <column name="NOMBRE_ESTADO" length="12" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

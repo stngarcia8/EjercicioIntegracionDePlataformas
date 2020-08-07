@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Acceso denegado.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Error de inicio de sesión.</h1>
+  <p class="text-justify">
+      No ha sido posible iniciar la sesión del usuario, esto puede ocurrir debido a las siguientes situaciones:
+      <ul class="text-justify">
+        <li>El usuario no esta registrado en gesbod.</li>
+        <li> El nombre de usuario y/o contraseña ingresadas no son las correctas.</li>
+        <li>La cuenta de usuario esta inhabilitada.</li>
+      </ul>
+      <p class="text-justify">
+        Comunique el problema al administrador del sistema.
+      </p>
+  </p>
+
+  {% endblock %}

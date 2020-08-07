@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Ver categoría.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Información de categoría.</h1>
+
+  <table class="table table-responsive table-bordered table-hover table-striped">
+      <tbody>
+              <tr>
+                <td>Id</td>
+                <td>{{ categoria.id }}</td>
+              </tr>
+              <tr>
+                <td>Nombre</td>
+                <td>{{ categoria.nombre }}</td>
+              </tr>
+              <tr>
+                  <td>Estado</td>
+                  {% if categoria.habilitado %}
+                  <td>Activa</td>
+                  {% else %}
+                    <td>Inhabilitada</td>
+                  {% endif %}
+                </tr>
+              <tr>
+                <td></td>
+                <td>
+                    <a class="btn btn-light" href="{{ categoria.get_update_url }}" role="button"> Editar </a>
+                    <a class="btn btn-light" href="{{ categoria.get_delete_url }}" role="button"> Eliminar </a>
+                </td>
+              </tr>
+      </tbody>
+    </table>
+    <a class="btn btn-primary" href="{% url 'listaDeCategorias' %}" role="button"> Volver </a></p>
+
+ {% endblock %}

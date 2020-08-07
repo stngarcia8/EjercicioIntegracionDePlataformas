@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Lista de sucursales.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Lista de sucursales.</h1>
+  <p>
+    <a class="btn btn-primary" href="{% url 'registrarSucursal' %}" role="button"> Agregar sucursal </a>
+    <form class="form-inline my-2 my-lg-0" action="{% url 'listaDeSucursales' %}" method="get" accept-charset="utf-8">
+      <label class="control-label" for="buscar">
+        <span class="glyphicon glyphicon-filter"> Sucursal:</span>
+      </label>
+      <input name="q" class="form-control mr-sm-2" type="text" aria-label="buscar" value="">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        <span class="gliphicon gliphicon-search"> Buscar</span>
+      </button>
+    </form>
+  </p>
+  <hr>
+    {% if sucursal_list %}
+    <table class="table table-responsive table-bordered">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Encargado</th>
+          <th>Dirección</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+            {% for sucursal in sucursal_list %}
+              <tr>
+                <td>{{ sucursal.id }}</td>
+                  <td>{{ sucursal.nombre }}</td>
+                  <td>{{ sucursal.encargado }} {{ usuario.last_name }}</td>
+                  <td>{{ sucursal.direccion }} {{ usuario.last_name }}</td>
+                  {% if sucursal.habilitado %}
+                    <td>
+                        <span class="glyphicon glyphicon-ok"> Activa</span>
+                    </td>
+                  {% else %}
+                    <td>
+                        <spam class="glyphicon glyphicon-remove"> Inhabilitada</spam>
+                    </td>
+                  {% endif %}
+                  <td>
+                      <a class="btn btn-light" href="{{ sucursal.get_absolute_url }}" role="button">
+                          <span class="glyphicon glyphicon-info-sign"> Detalles</span>
+                      </a>
+                  </td>
+              </tr>
+            {% endfor %}
+      </tbody>
+    </table>
+<!-- Menú de paginación -->
+{% if is_paginated %}
+
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+
+      {% if page_obj.has_previous %}
+        <li class="page-item ">
+          <a class="page-link" href="?page=1">&laquo;&laquo;</a>
+        </li>
+        <li class="page-item ">
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
+          </li>
+      {% else %}
+      <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">&laquo;&laquo;</a>
+        </li>
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">&laquo;</a>
+        </li>
+      {% endif %}
+      {% for i in paginator.page_range %}
+        <li class="page-item {% if page_obj.number == i %}active{% endif %}">
+          <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+        </li>
+      {% endfor %}
+      {% if page_obj.has_next %}
+        <li class="page-item ">
+          <a class="page-link" href="?page={{ page_obj.next_page_number }}">&raquo;</a>
+        </li>
+        <li class="page-item ">
+            <a class="page-link" href="?page=last">&raquo;&raquo;</a>
+          </li>
+      {% else %}
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">&raquo;</a>
+        </li>
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">&raquo;&raquo;</a>
+          </li>
+      {% endif %}
+    </ul>
+  </nav>
+{% endif %}
+
+
+    {% else %}
+    <p class="lead">
+        No hay sucursales registradas.
+    </p>
+    {% endif %}
+  
+ {% endblock %}

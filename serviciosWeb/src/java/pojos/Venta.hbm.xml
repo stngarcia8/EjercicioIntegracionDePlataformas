@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-06-2019 3:33:07 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Venta" table="VENTA" schema="VENTABOOK_USR" optimistic-lock="version">
+        <id name="idVenta" type="string">
+            <column name="ID_VENTA" length="36" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="usuario" class="pojos.Usuario" fetch="select">
+            <column name="ID_USUARIO" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="tipoDoc" class="pojos.TipoDoc" fetch="select">
+            <column name="ID_TIPO_DOC" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="fechaVenta" type="date">
+            <column name="FECHA_VENTA" length="7" not-null="true" />
+        </property>
+        <property name="rutcliente" type="string">
+            <column name="RUTCLIENTE" length="10" not-null="true" />
+        </property>
+        <property name="nombrecliente" type="string">
+            <column name="NOMBRECLIENTE" length="50" not-null="true" />
+        </property>
+        <property name="razonsocialFactura" type="string">
+            <column name="RAZONSOCIAL_FACTURA" length="80" />
+        </property>
+        <property name="rutFactura" type="string">
+            <column name="RUT_FACTURA" length="10" />
+        </property>
+        <property name="direccionFactura" type="string">
+            <column name="DIRECCION_FACTURA" length="100" />
+        </property>
+        <property name="giroFactura" type="string">
+            <column name="GIRO_FACTURA" length="50" />
+        </property>
+        <property name="contactoFactura" type="string">
+            <column name="CONTACTO_FACTURA" length="50" />
+        </property>
+        <property name="ciudadFactura" type="string">
+            <column name="CIUDAD_FACTURA" length="20" />
+        </property>
+        <set name="detVentas" table="DET_VENTA" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_VENTA" length="36" not-null="true" />
+            </key>
+            <one-to-many class="pojos.DetVenta" />
+        </set>
+    </class>
+</hibernate-mapping>

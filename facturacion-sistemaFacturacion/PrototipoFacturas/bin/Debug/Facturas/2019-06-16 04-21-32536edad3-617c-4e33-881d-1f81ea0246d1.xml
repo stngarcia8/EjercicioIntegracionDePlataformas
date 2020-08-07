@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Ventabook>
+  <Venta>
+    <IdVenta>536edad3-617c-4e33-881d-1f81ea0246d1</IdVenta>
+    <FechaVenta>2019/06/16 04:21:32</FechaVenta>
+    <RutUsuario>13707641-1</RutUsuario>
+    <NombreUsuario>Daniel Garcia Asathor</NombreUsuario>
+    <RutCliente>95175346</RutCliente>
+    <NombreCliente>cuarto weon</NombreCliente>
+    <TipoDocumento>Factura</TipoDocumento>
+    <NombreSucursal>Sucursal 1</NombreSucursal>
+    <FormaPago>Efectivo</FormaPago>
+    <IdFormaPago>1</IdFormaPago>
+    <IdTipoDocumento>2</IdTipoDocumento>
+  </Venta>
+  <DatosFacturacion>
+    <RazonSocial>cuarto weon</RazonSocial>
+    <Rut></Rut>
+    <Direccion>cuarto weon</Direccion>
+    <Giro>cuarto weon</Giro>
+    <Contacto>cuarto weon</Contacto>
+    <Ciudad>cuarto weon</Ciudad>
+    <CantidadDetalle>0</CantidadDetalle>
+  </DatosFacturacion>
+</Ventabook>

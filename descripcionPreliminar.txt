@@ -1,0 +1,11 @@
+Para el correcto funcionamiento de los programas se deben seguir las instrucciones que cada aplicacion contiene, pero la prioridad es la ejecución de los script.El software utilizado fue el siguiente:
+- ORACLE18c: Servidor de base de datos.
+- NetBeans v8.2: para la creación de los servicios web (restful) y la aplicación ventabook.
+- Servidor web Glassfish version 4.1.1: Ejecucion de los servicios web y aplicación ventabook
+- java 1.8 programación de servicios rest y ventabook)
+- VisualStudio 2015: para la creación del aplicativo de facturas, realizado en C#.
+- Miniconda version 3.4 con Python v3.7 y django version 2.7: Para la creacion de las aplicaciones gesbod (bodega) y la solución ventastock.
+- ActiveMQ v5.9.15: para realizar la conectividad por mensajería entre aplicacion de ventabook y facturación, ventastock y facturación.  Las ventas realizadas tanto por el aplicativo ventabook y ventastock envian los datos de la venta registrada por medio de mensajes a la aplicacion de facturas.
+- Navegador web: Cualquiera menos internet explorer, se recomienda para testear servicios web google chrome y la extension advanced restful services.
+
+

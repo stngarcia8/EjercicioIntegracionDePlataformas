@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-06-2019 3:33:07 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Usuario" table="USUARIO" schema="VENTABOOK_USR" optimistic-lock="version">
+        <id name="idUsuario" type="big_decimal">
+            <column name="ID_USUARIO" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="tipoUs" class="pojos.TipoUs" fetch="select">
+            <column name="ID_TIPO" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="sucursal" class="pojos.Sucursal" fetch="select">
+            <column name="ID_SUCURSAL" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="nombreUsuario" type="string">
+            <column name="NOMBRE_USUARIO" length="50" not-null="true" />
+        </property>
+        <property name="rutUsuario" type="string">
+            <column name="RUT_USUARIO" length="10" not-null="true" />
+        </property>
+        <property name="contrasenaUsuario" type="string">
+            <column name="CONTRASENA_USUARIO" length="20" not-null="true" />
+        </property>
+        <set name="ventas" table="VENTA" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_USUARIO" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="pojos.Venta" />
+        </set>
+    </class>
+</hibernate-mapping>

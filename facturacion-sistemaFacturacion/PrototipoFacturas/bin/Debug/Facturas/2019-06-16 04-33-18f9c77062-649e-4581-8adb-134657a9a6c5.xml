@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Ventabook>
+  <Venta>
+    <IdVenta>f9c77062-649e-4581-8adb-134657a9a6c5</IdVenta>
+    <FechaVenta>2019/06/16 04:33:18</FechaVenta>
+    <RutUsuario>12345678-9</RutUsuario>
+    <NombreUsuario>Pedro Briceno Donoso</NombreUsuario>
+    <RutCliente>123789654</RutCliente>
+    <NombreCliente>123456789</NombreCliente>
+    <TipoDocumento>Factura</TipoDocumento>
+    <NombreSucursal>Sucursal 1</NombreSucursal>
+    <FormaPago>Efectivo</FormaPago>
+    <IdFormaPago>1</IdFormaPago>
+    <IdTipoDocumento>2</IdTipoDocumento>
+  </Venta>
+  <DatosFacturacion>
+    <RazonSocial>asdf</RazonSocial>
+    <Rut>asdf</Rut>
+    <Direccion>asdf</Direccion>
+    <Giro>asdf</Giro>
+    <Contacto>asdf</Contacto>
+    <Ciudad>asdf</Ciudad>
+    <CantidadDetalle>1</CantidadDetalle>
+  </DatosFacturacion>
+  <DetalleVenta1>
+    <IdEjemplar>8</IdEjemplar>
+    <NombreEjemplar>Fulgrim</NombreEjemplar>
+    <PrecioUnitario>14000</PrecioUnitario>
+    <Cantidad>1</Cantidad>
+    <PrecioTotal>14000</PrecioTotal>
+  </DetalleVenta1>
+</Ventabook>

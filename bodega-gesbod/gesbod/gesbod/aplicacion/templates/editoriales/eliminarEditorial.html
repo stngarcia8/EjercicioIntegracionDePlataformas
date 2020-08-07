@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Eliminar editorial.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Eliminar editorial.</h1>
+  <p class="lead">
+      ¿Está seguro de eliminar la editorial?
+  </p>
+    <form action="" method="post">
+      {% csrf_token %}
+      <button class="btn btn-lg btn-light " type="submit"> Confirmar eliminación </button>
+      <a class="btn btn-primary" href="{% url 'listaDeEditoriales' %}" role="button"> Cancelar </a></p>
+    </form>
+
+ {% endblock %}

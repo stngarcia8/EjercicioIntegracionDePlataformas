@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Registro de editorial.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Registro de editorial.</h1>
+  <p class="lead">
+      Ingrese los datos de la nueva editorial.
+  </p>
+  <form method="post">
+    {% csrf_token %}
+
+    {% if form.non.field.errors %}
+      {{ form.non.field.errors }}
+    {% endif %}
+    
+    {% for field in form.visible_fields %}
+      <div class="form-group">
+          {{ field.label_tag }}
+          {{ field }}
+        </div>
+    {% endfor %}
+    <button class="btn btn-lg btn-primary " type="submit"> Registrar editorial </button>
+    <a class="btn btn-light" href="{% url 'listaDeEditoriales' %}" role="button"> Cancelar </a></p>
+  </form>
+
+ {% endblock %}

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Ventabook>
+  <Venta>
+    <IdVenta>8f3604a3-d8de-47a7-aadc-5fcb11113720</IdVenta>
+    <FechaVenta>2019/06/16 04:16:45</FechaVenta>
+    <RutUsuario>12345678-9</RutUsuario>
+    <NombreUsuario>Pedro Briceno Donoso</NombreUsuario>
+    <RutCliente>78945612-3</RutCliente>
+    <NombreCliente>segundo weon</NombreCliente>
+    <TipoDocumento>Factura</TipoDocumento>
+    <NombreSucursal>Sucursal 1</NombreSucursal>
+    <FormaPago>Efectivo</FormaPago>
+    <IdFormaPago>1</IdFormaPago>
+    <IdTipoDocumento>2</IdTipoDocumento>
+  </Venta>
+  <DatosFacturacion>
+    <RazonSocial>segundo weon</RazonSocial>
+    <Rut></Rut>
+    <Direccion>segundo weon</Direccion>
+    <Giro>segundo weon</Giro>
+    <Contacto>segundo weon</Contacto>
+    <Ciudad>segundo weon</Ciudad>
+    <CantidadDetalle>2</CantidadDetalle>
+  </DatosFacturacion>
+  <DetalleVenta1>
+    <IdEjemplar>2</IdEjemplar>
+    <NombreEjemplar>Antes de que los cuelguen</NombreEjemplar>
+    <PrecioUnitario>14000</PrecioUnitario>
+    <Cantidad>1</Cantidad>
+    <PrecioTotal>14000</PrecioTotal>
+  </DetalleVenta1>
+  <DetalleVenta2>
+    <IdEjemplar>3</IdEjemplar>
+    <NombreEjemplar>El ultimo argumento de los reyes</NombreEjemplar>
+    <PrecioUnitario>13000</PrecioUnitario>
+    <Cantidad>1</Cantidad>
+    <PrecioTotal>13000</PrecioTotal>
+  </DetalleVenta2>
+</Ventabook>

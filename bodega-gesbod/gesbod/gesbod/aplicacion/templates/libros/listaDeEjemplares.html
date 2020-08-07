@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Lista de ejemplares.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Lista de ejemplares.</h1>
+  <p>
+    Título: {{ libro.titulo }}<br>
+    Autor: {{ libro.autor.nombre_completo }}
+    Ejemplares: {{ libro.cantidad_ejemplares }}
+  </p>
+    <form class="form-inline my-2 my-lg-0" action="{% url 'listaDeLibros' %}" method="get" accept-charset="utf-8">
+      <label class="control-label" for="buscar">
+        <span class='content:"\e138";'> Libro:</span>
+      </label>
+      <input name="q" class="form-control mr-sm-2" type="text" aria-label="buscar" value="">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        <span class="gliphicon gliphicon-search"> Buscar</span>
+      </button>
+    </form>
+  </p>
+  <hr>
+    {% if ejemplares_list %}
+    <table class="table table-responsive table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Orden de compra</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+            {% for ejemplar in ejemplares_list %}
+              <tr>
+                  <td>{{ ejemplar.libro.titulo }}</td>
+                  <td>{{ ejemplar.orden_compra }}</td>
+                  <td>
+
+                    {% ifequal ejemplar.estado 'd' %}
+                    Disponible
+                    {% endifequal %}
+                    {% ifequal ejemplar.estado 'v' %}
+                    Vendido
+                    {% endifequal %}
+                    {% ifequal ejemplar.estado 'r' %}
+                    DisponibleReservado
+                    {% endifequal %}
+                  </td>
+                  <td>
+                      <a class="btn btn-light" href="{{ libro.get_absolute_url }}" role="button">
+                          <span class="glyphicon glyphicon-info-sign"> Detalles</span>
+                      </a>
+                  </td>
+              </tr>
+            {% endfor %}
+      </tbody>
+    </table>
+
+    {% else %}
+    <p class="lead">
+        El libro {{ libro.titulo }} no posee ejemplares ingresados.
+    </p>
+    {% endif %}
+  
+ {% endblock %}

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Ventabook>
+  <Venta>
+    <IdVenta>d95cdf67-0bad-4463-929a-20327bbb2a25</IdVenta>
+    <FechaVenta>2019/06/15 23:19:21</FechaVenta>
+    <RutUsuario>12345678-9</RutUsuario>
+    <NombreUsuario>Ignacio Salazar Garcia</NombreUsuario>
+    <RutCliente>13707641-1</RutCliente>
+    <NombreCliente>Daniel Garcia Asathor</NombreCliente>
+    <TipoDocumento>Boleta</TipoDocumento>
+    <NombreSucursal>Sucursal 1</NombreSucursal>
+    <FormaPago>Efectivo</FormaPago>
+    <IdFormaPago>1</IdFormaPago>
+    <IdTipoDocumento>1</IdTipoDocumento>
+  </Venta>
+  <DatosFacturacion>
+    <RazonSocial></RazonSocial>
+    <Rut></Rut>
+    <Direccion></Direccion>
+    <Giro></Giro>
+    <Contacto></Contacto>
+    <Ciudad></Ciudad>
+    <CantidadDetalle>1</CantidadDetalle>
+  </DatosFacturacion>
+  <DetalleVenta1>
+    <IdEjemplar>6</IdEjemplar>
+    <NombreEjemplar>La batalla de Calth</NombreEjemplar>
+    <PrecioUnitario>13000</PrecioUnitario>
+    <Cantidad>1</Cantidad>
+    <PrecioTotal>13000</PrecioTotal>
+  </DetalleVenta1>
+</Ventabook>

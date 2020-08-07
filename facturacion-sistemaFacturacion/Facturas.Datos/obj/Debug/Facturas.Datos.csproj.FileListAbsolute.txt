@@ -1,0 +1,16 @@
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\bin\Debug\Facturas.Datos.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\bin\Debug\Facturas.Datos.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\bin\Debug\Facturas.Dominio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\bin\Debug\Facturas.Dominio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\obj\Debug\Facturas.Datos.csprojResolveAssemblyReference.cache
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\obj\Debug\Facturas.Datos.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\obj\Debug\Facturas.Datos.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\bin\Debug\Facturas.Datos.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\bin\Debug\Facturas.Datos.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\bin\Debug\Facturas.Dominio.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\bin\Debug\Facturas.Dominio.pdb
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\obj\Debug\Facturas.Datos.csprojResolveAssemblyReference.cache
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\obj\Debug\Facturas.Datos.dll
+D:\Users\nacho\Documents\Visual Studio 2015\Projects\Prototipo-Facturas\Facturas.Datos\obj\Debug\Facturas.Datos.pdb

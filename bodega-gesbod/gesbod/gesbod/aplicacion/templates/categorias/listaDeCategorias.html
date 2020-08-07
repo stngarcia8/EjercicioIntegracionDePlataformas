@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Lista de categorías.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Lista de categorías.</h1>
+  <p>
+    <a class="btn btn-primary" href="{% url 'registrarCategoria' %}" role="button"> Agregar categoría </a>
+    <form class="form-inline my-2 my-lg-0" action="{% url 'listaDeCategorias' %}" method="get" accept-charset="utf-8">
+      <label class="control-label" for="buscar">Categoría :</label>
+      <input name="q" class="form-control mr-sm-2" type="text" aria-label="buscar" value="">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Buscar </button>
+    </form>
+  </p>
+  <hr>
+    {% if categoria_list %}
+    <table class="table table-responsive table-bordered table-hover table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nombre categoría</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+            {% for categoria in categoria_list %}
+              <tr>
+                <td>{{ categoria.id }}</td>
+                  <td>{{ categoria.nombre }}</td>
+                  {% if categoria.habilitado %}
+                    <td>Activa</td>
+                  {% else %}
+                    <td>Inhabilitada</td>
+                  {% endif %}
+                  <td>
+                      <a class="btn btn-light" href="{{ categoria.get_absolute_url }}" role="button"> Detalles </a>
+                  </td>
+              </tr>
+            {% endfor %}
+      </tbody>
+    </table>
+<!-- Menú de paginación -->
+{% if is_paginated %}
+
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+
+      {% if page_obj.has_previous %}
+        <li class="page-item ">
+          <a class="page-link" href="?page=1">&laquo;&laquo;</a>
+        </li>
+        <li class="page-item ">
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
+          </li>
+      {% else %}
+      <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">&laquo;&laquo;</a>
+        </li>
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">&laquo;</a>
+        </li>
+      {% endif %}
+      {% for i in paginator.page_range %}
+        <li class="page-item {% if page_obj.number == i %}active{% endif %}">
+          <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+        </li>
+      {% endfor %}
+      {% if page_obj.has_next %}
+        <li class="page-item ">
+          <a class="page-link" href="?page={{ page_obj.next_page_number }}">&raquo;</a>
+        </li>
+        <li class="page-item ">
+            <a class="page-link" href="?page=last">&raquo;&raquo;</a>
+          </li>
+      {% else %}
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">&raquo;</a>
+        </li>
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">&raquo;&raquo;</a>
+          </li>
+      {% endif %}
+    </ul>
+  </nav>
+{% endif %}
+
+
+    {% else %}
+    <p class="lead">
+        No hay categorías registradas.
+    </p>
+    {% endif %}
+
+ {% endblock %}

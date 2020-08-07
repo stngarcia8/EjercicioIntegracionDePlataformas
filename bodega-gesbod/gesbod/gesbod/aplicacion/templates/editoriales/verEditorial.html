@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block titleHead %}
+<title>GesBod - Ver editorial.</title>
+{% endblock %}
+
+{% block contenido %}
+
+  <h1>Información de editorial.</h1>
+
+  <table class="table table-responsive table-bordered table-hover table-striped">
+      <tbody>
+              <tr>
+                <td>Id</td>
+                <td>{{ editorial.id }}</td>
+              </tr>
+              <tr>
+                <td>Nombre</td>
+                <td>{{ editorial.nombre }}</td>
+              </tr>
+              <tr>
+                <td>Estado</td>
+                {% if editorial.habilitado %}
+                  <td>Activa</td>
+                {% else %}
+                  <td>Inhabilitada</td>
+                {% endif %}
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                    <a class="btn btn-light" href="{{ editorial.get_update_url }}" role="button"> Editar </a>
+                    <a class="btn btn-light" href="{{ editorial.get_delete_url }}" role="button"> Eliminar </a>
+                </td>
+              </tr>
+      </tbody>
+    </table>
+    <a class="btn btn-primary" href="{% url 'listaDeEditoriales' %}" role="button"> Volver </a></p>
+
+ {% endblock %}
